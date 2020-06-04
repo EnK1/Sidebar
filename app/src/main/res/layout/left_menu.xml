@@ -3,20 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/bg"
+    android:descendantFocusability="blocksDescendants"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/sidebar_head"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
+        android:layout_height="105dp"
         android:background="@color/whiteTranslucent"
         app:layout_constraintTop_toTopOf="parent">
         
-        <androidx.appcompat.widget.AppCompatImageView
+        <ImageView
             android:id="@+id/iv_head"
             android:src="@mipmap/l"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -25,9 +26,9 @@
         <TextView
             android:id="@+id/text_name"
             android:layout_width="80dp"
-            android:layout_height="30dp"
+            android:layout_height="20dp"
             android:text="Enk1"
-            android:textSize="22dp"
+            android:textSize="14sp"
             android:textColor="@android:color/white"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
@@ -62,20 +63,21 @@
 
         <TextView
             android:layout_width="300dp"
-            android:layout_height="30dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="20dp"
             android:text="这个人很懒，什么都没有写"
-            android:textSize="22dp"
+            android:textSize="14sp"
             android:textColor="@android:color/white"
             app:layout_constraintTop_toBottomOf="@id/img_item"
             app:layout_constraintLeft_toRightOf="@id/iv_head" />
 
         <ImageView
-            android:id="@+id/iv_close_menu"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
+            android:id="@+id/x"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@mipmap/x"
+            android:alpha="0.5"
+            android:layout_margin="10dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
@@ -90,47 +92,47 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="80dp">
+            android:layout_height="40dp">
 
             <ImageView
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:src="@mipmap/settings"/>
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
                 android:gravity="center"
                 android:text="设置"
-                android:textSize="28dp"
+                android:textSize="14sp"
                 android:textColor="@android:color/white"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="80dp">
+            android:layout_height="40dp">
 
             <ImageView
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:src="@mipmap/exit"/>
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
                 android:gravity="center"
                 android:text="退出"
-                android:textSize="28dp"
+                android:textSize="14sp"
                 android:textColor="@android:color/white"/>
 
         </LinearLayout>
